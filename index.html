@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZOMUN - Гидроизоляционные работы</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="./style.css">
-
-       
-   
 </head>
 <body>
     <!-- Header -->
@@ -24,7 +20,29 @@
                     <p>Гидроизоляционные работы</p>
                 </div>
             </div>
-            <nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Мобильное всплывающее меню -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <div class="mobile-menu-content">
+                    <span class="close-btn" id="closeMobileMenu">&times;</span>
+                    <nav class="mobile-nav-menu">
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                        <div class="mobile-contact-info">
+                            
+                            <a href="#contact" class="btn">Заказать звонок</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#home">Главная</a></li>
                     <li><a href="#services">Услуги</a></li>
@@ -34,10 +52,7 @@
                 </ul>
             </nav>
             <div class="contact-info">
-                <div class="phone">
-                    <i class="fas fa-phone"></i>
-                    <span>+998 (90) 990-98-92</span>
-                </div>
+                
                 <a href="#contact" class="btn">Заказать звонок</a>
             </div>
         </div>
@@ -137,7 +152,7 @@
                     <p>Наши специалисты используют только проверенные материалы от ведущих производителей и современное оборудование, что гарантирует высокое качество выполняемых работ.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number">5+</div>
+                            <div class="stat-number">12+</div>
                             <div class="stat-text">Лет опыта</div>
                         </div>
                         <div class="stat-item">
@@ -149,13 +164,13 @@
                             <div class="stat-text">Довольных клиентов</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">3</div>
+                            <div class="stat-number">10</div>
                             <div class="stat-text">Гарантия лет</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://placehold.co/600x400/1a3a6c/ffffff?text=Наша+команда" alt="Наша команда">
+                    <img src="./photo_2025-08-06_16-34-08.jpg" alt="Наша команда">
                 </div>
             </div>
         </div>
@@ -223,7 +238,7 @@
                 <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
             </div>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" id="contactInfo">
                     <div class="contact-info-item">
                         <h3><i class="fas fa-map-marker-alt"></i> Адрес</h3>
                         <p>г. Ташкент, Коракамыш 1/3, 52, 4</p>
@@ -322,7 +337,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 IZOMUN. Все права защищены.</p>
+                <p>&copy; 2013 IZOMUN. Все права защищены.</p>
             </div>
         </div>
     </footer>

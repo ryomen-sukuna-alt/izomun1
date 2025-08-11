@@ -158,3 +158,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
             mobileMenu.classList.remove('active');
         });
     });
+
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z180ZMHEQ9');
